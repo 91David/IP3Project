@@ -1,1 +1,1 @@
-# IP3Project
+# Integrated Project 3
