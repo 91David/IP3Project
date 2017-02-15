@@ -3,7 +3,6 @@ import java.sql.*;
 public class User {
 
     // TODO - User Sessions and Log-In System
-    // TODO - File storage: https://dev.mysql.com/doc/refman/5.7/en/blob.html
 
     // Object Variables
     private String forename;    // First Name
@@ -39,7 +38,8 @@ public class User {
                 "testPassword",
                 "IDK");
 
-        // Throw into DB TODO
+        // Throw into DB
+        // TODO error parameters
         try {
 
             String statement = String.format("INSERT INTO mydb.User (forename, surname, username, password, role) " +
@@ -53,6 +53,18 @@ public class User {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Uses the SHA-256 hashing algorithm to generate a hash value for a password.
+     *
+     * @param password
+     * @return Hash value for input passcode
+     */
+    public String hashPassword(String password) {
+    // TODO
+        return null;
+    }
+
 
     private String getForename() {
         return forename;
