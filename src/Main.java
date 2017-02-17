@@ -15,7 +15,7 @@ public class Main {
 
         // 1.   Registration of Users to a database.
         // User.register("A Person", databaseConnection);
-
+			
         // 2.   Hashing using BCrypt.
         // This is supposed to take a while.
         String hash = User.hashPassword("SomeonesPassword");
