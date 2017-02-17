@@ -16,10 +16,10 @@ public class Main {
         // 1.   Registration of Users to a database.
         // User.register("A Person", databaseConnection);
 
-        // 2.   Hashing of a Password using SHA-256
-        System.out.println(User.hashPassword("Hash"));
-        System.out.println(User.hashPassword("My"));
-        System.out.println(User.hashPassword("Password"));
+        // 2.   Hashing using BCrypt.
+        // This is supposed to take a while.
+        String hash = User.hashPassword("SomeonesPassword");
+        User.verifyPassword("SomeonesPassword", hash);
 
     }
 }

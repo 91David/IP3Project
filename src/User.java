@@ -1,8 +1,10 @@
+import org.mindrot.jbcrypt.BCrypt;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
- class User {
+class User {
 
     // TODO - User Sessions and Log-In System
 
@@ -30,7 +32,6 @@ import java.sql.*;
         this.username = username;
     }
 
-
     @SuppressWarnings("SameParameterValue")
     static void register(String fullName, Connection c) {
 
@@ -57,32 +58,33 @@ import java.sql.*;
     }
 
     /**
-     * Uses the SHA-256 hashing algorithm to generate a hash value for a password.
+     * Hashes passwords using jBCrypt.
      *
-     * @param password
-     * @return Hash value for input passcode
+     * @param password The user's password.
+     * @return The hashed password.
      */
-     static String hashPassword(String password) {
+    public static String hashPassword(String password) {
 
-        // TODO Needs Salt.
-        MessageDigest md = null;
-        try {
-            md = MessageDigest.getInstance("SHA-256");
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
+        // Note: Do not modify gensalt beyond 30.
+        String salt = BCrypt.gensalt(16);
+        String hashedPassword = BCrypt.hashpw(password, salt);
 
-        md.update(password.getBytes());
-        byte byteData[] = md.digest();
-
-        StringBuffer sb = new StringBuffer();
-         for (byte aByteData : byteData) {
-             sb.append(Integer.toString((aByteData & 0xff) + 0x100, 16).substring(1));
-         }
-
-        return password + " ==HASH== " + sb.toString();
+        System.out.printf("Password: %s \n Hash: %s \n Salt: %s \n\n", password, hashedPassword, salt);
+        return hashedPassword;
     }
 
+    /**
+     * Check that an unencrypted password matches one that has previously been hashed.
+     * (It should NOT reveal the password, only verify whether the hashed matches the plain.)
+     *
+     * @param password       The user's password.
+     * @param hashedPassword The hashed password.
+     * @return Boolean verifying whether password matches.
+     */
+    public static Boolean verifyPassword(String password, String hashedPassword) {
+        System.out.println(BCrypt.checkpw(password, hashedPassword));
+        return BCrypt.checkpw(password, hashedPassword);
+    }
 
     private String getForename() {
         return forename;
