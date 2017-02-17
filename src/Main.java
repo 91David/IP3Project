@@ -15,11 +15,14 @@ public class Main {
 
         // 1.   Registration of Users to a database.
         // User.register("A Person", databaseConnection);
-			
+
         // 2.   Hashing using BCrypt.
         // This is supposed to take a while.
         String hash = User.hashPassword("SomeonesPassword");
         User.verifyPassword("SomeonesPassword", hash);
+
+        // 3.    Generate MD5 checksum for file.
+        System.out.println(Document.generateChecksum("md5test.txt"));
 
     }
 }
