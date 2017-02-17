@@ -1,16 +1,14 @@
 # Integrated Project 3
-TODO: Write a project description
+Document Management solution allows users to control their documented business processes and policies required documentation.
 
-## Contributing
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-
-### Database Requirements:
-* [MySQL Workbench](https://www.mysql.com/products/workbench/)
+## Built With
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE
+* [Maven](https://maven.apache.org/) - Dependency Management
 * [MySQL Server](https://dev.mysql.com/downloads/mysql/)
+* [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+### Libraries
+* [JBCrypt](https://github.com/djmdjm/jBCrypt) - Password Hashing
 
 ## Credits
 TODO
