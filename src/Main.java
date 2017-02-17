@@ -22,7 +22,7 @@ public class Main {
         User.verifyPassword("SomeonesPassword", hash);
 
         // 3.    Generate MD5 checksum for file.
-        System.out.println(Document.generateChecksum("testDocument.txt"));
+        System.out.println(Document.generateChecksum("md5test.txt"));
 
     }
 }
