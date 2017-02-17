@@ -1,6 +1,8 @@
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
-public class User {
+ class User {
 
     // TODO - User Sessions and Log-In System
 
@@ -60,9 +62,25 @@ public class User {
      * @param password
      * @return Hash value for input passcode
      */
-    public String hashPassword(String password) {
-    // TODO
-        return null;
+     static String hashPassword(String password) {
+
+        // TODO Needs Salt.
+        MessageDigest md = null;
+        try {
+            md = MessageDigest.getInstance("SHA-256");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+
+        md.update(password.getBytes());
+        byte byteData[] = md.digest();
+
+        StringBuffer sb = new StringBuffer();
+         for (byte aByteData : byteData) {
+             sb.append(Integer.toString((aByteData & 0xff) + 0x100, 16).substring(1));
+         }
+
+        return password + " ==HASH== " + sb.toString();
     }
 
 
