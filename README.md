@@ -8,7 +8,5 @@ Document Management solution allows users to control their documented business p
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 ### Libraries
+* [Dropbox SDK](https://github.com/dropbox/dropbox-sdk-java) - Cloud Storage
 * [JBCrypt](https://github.com/djmdjm/jBCrypt) - API for Password Hashing
-
-## Credits
-TODO
