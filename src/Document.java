@@ -12,7 +12,7 @@ class Document {
      * @param filename name of file to generate checksum for.
      * @return MD5 checksum as string
      */
-    static String generateChecksum(@SuppressWarnings("SameParameterValue") String filename) {
+    static String generateChecksum(String filename) {
 
         try {
             // Instantiating file and Hashing Algorithm.
