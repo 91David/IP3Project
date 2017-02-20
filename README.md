@@ -6,6 +6,7 @@ Document Management solution allows users to control their documented business p
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [MySQL Server](https://dev.mysql.com/downloads/mysql/)
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
+* [SCSS Preprocessor](http://sass-lang.com/)
 
 ### Libraries
 * [Dropbox SDK](https://github.com/dropbox/dropbox-sdk-java) - Cloud Storage
