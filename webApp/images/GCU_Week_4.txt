@@ -1,0 +1,57 @@
+Guidance for start of week 5
+
+Useful checklist
+
+Depending on your teams timescales, you will be looking to have some or all of the following over the week.
+
+Guiding Lights
+You will know exactly what the key objectives of this project are.
+
+Quality
+Every stage of the design project is informed by the strength and accuracy of previous stages.
+Enure that you are happy with the quality before you move onto the next. It's easier to fix problems
+that are part of a single stage as opposed to every subsequent stage.
+
+User Roles
+Fully understand the purpose of each user role.
+
+User stories
+Fully understand what each user wants to get from the report management system
+
+ 
+
+
+
+Requirements and Acceptance Criteria
+You will have identified exactly what the system needs to do in order to allow every user role to perform their job effectively.
+
+Note... the Acceptance Criteria and wireframing are not exclusive nor linear stages. They are cyclic stages that requires movement to and from each other.
+Allow each to inform and strengthen the other.
+
+
+Wireframing
+Use pen and paper, mouse and screen... it's up to you. Assume the user roles and transport yourself through the system as you design it. Does it make sense?
+Are their global elements that I need to access wherever I am. Am I using patterns that simplify the learning curve of the user. Are there any design conventions
+in life that no matter what the system, users will expect to find certain elements in certain places?
+
+Suggestion: Whiteboarding is a very fluid way to kick start ideas. Prototyping tools are great for refining.
+
+
+ 
+
+
+
+
+Things to consider in forthcoming stages
+
+Usability Testing
+Who are you going to test?
+How are you going to test?
+How are you going to collate the results?
+Have you allocated enough time to allow the results to inform and strengthen your designs?
+
+You may not be ready to look a usability testing just yet, but keep it in the back of your mind when you start to wireframe as your wireframes may form the basis for your tests.
+
+
+
+Slack channel
