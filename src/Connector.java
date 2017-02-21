@@ -1,9 +1,17 @@
+import com.mysql.cj.jdbc.Driver;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import com.mysql.cj.jdbc.Driver;
+import com.dropbox.core.DbxException;
+import com.dropbox.core.DbxRequestConfig;
+import com.dropbox.core.v2.DbxClientV2;
+import com.dropbox.core.v2.users.FullAccount;
 
+/**
+ * Class for handling connections to databases and third party applications
+ */
 class Connector {
 
     // Database Details
@@ -16,12 +24,10 @@ class Connector {
      *
      * @return connection object for database.
      */
-    static Connection connect() {
-
-        System.out.println("Attempting to connect to database...");
-        Connection conn;
+    static Connection connectDB() {
 
         // Try-Catch to create connection instance.
+        Connection conn;
         try {
             new Driver();
             conn = DriverManager.getConnection(url, username, password);
@@ -35,6 +41,31 @@ class Connector {
             System.out.println("Database successfully connected.");
             return conn;
         } else return null;
+
+    }
+
+    /**
+     * Attempts a connection to DropBox through API, attempts to test connection.
+     *
+     * @return Instance of Dropbox client.
+     */
+    @SuppressWarnings("deprecation")
+    static DbxClientV2 connectDropbox() {
+
+        // Establish connection to DropBox.
+        final String ACCESS_TOKEN = "INSERT ACCESS TOKEN HERE!";
+        DbxRequestConfig config = new DbxRequestConfig("dropbox/IdeaGen_DocumentServer", "en_US");
+        DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
+
+        // Check there is a connection.
+        try {
+            FullAccount account = client.users().getCurrentAccount();
+            System.out.println("DropBox sucessfully connected: " + account.getName().getDisplayName());
+            return client;
+        } catch (DbxException e) {
+            e.printStackTrace();
+            return null;
+        }
 
     }
 
