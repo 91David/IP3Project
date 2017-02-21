@@ -1,8 +1,16 @@
+import com.dropbox.core.DbxException;
+import com.dropbox.core.v2.DbxClientV2;
+import com.dropbox.core.v2.files.FileMetadata;
+import com.dropbox.core.v2.files.ListFolderResult;
+import com.dropbox.core.v2.files.Metadata;
+
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+@SuppressWarnings("SameParameterValue")
 class Document {
 
     /**
@@ -44,6 +52,59 @@ class Document {
             e.printStackTrace();
         }
         return null;
+    }
+
+
+    /**
+     * Uploads a file to a specified folder path in DropBox.
+     *
+     * @param filename location and name of file you want to upload.
+     * @param client   DB connection instance
+     */
+    static void uploadFile(String filename, DbxClientV2 client) {
+
+        try (InputStream in = new FileInputStream(filename)) {
+
+            // We can manipulate the path for the file to be saved in using this. Stringbuilder to Filepath will do.
+            FileMetadata metadata = client.files().uploadBuilder("/test.txt").uploadAndFinish(in);
+            System.out.println("Sucessfully uploaded " + filename);
+
+        } catch (IOException | DbxException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
+     * View the contents of a specific folder in the DropBox repo.
+     *
+     * @param path   Folder path you want to access
+     * @param client DB connection instance
+     */
+    static void viewFolder(String path, DbxClientV2 client) {
+
+        ListFolderResult result = null;
+        try {
+            result = client.files().listFolder(path);
+        } catch (DbxException e) {
+            e.printStackTrace();
+        }
+
+        while (true) {
+            for (Metadata metadata : result.getEntries()) {
+                System.out.println(metadata.getPathLower());
+            }
+
+            if (!result.getHasMore()) {
+                break;
+            }
+
+            try {
+                result = client.files().listFolderContinue(result.getCursor());
+            } catch (DbxException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

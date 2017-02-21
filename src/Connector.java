@@ -52,8 +52,10 @@ class Connector {
     @SuppressWarnings("deprecation")
     static DbxClientV2 connectDropbox() {
 
+        // Please remove the access token value when committing or else!
+        final String ACCESS_TOKEN = "tem23fuNNaAAAAAAAAAACKu4QX-t7MwpDXbgmLyLCPtgD-udLyBiK8MGHOD-8Zz9";
+
         // Establish connection to DropBox.
-        final String ACCESS_TOKEN = "INSERT ACCESS TOKEN HERE!";
         DbxRequestConfig config = new DbxRequestConfig("dropbox/IdeaGen_DocumentServer", "en_US");
         DbxClientV2 client = new DbxClientV2(config, ACCESS_TOKEN);
 

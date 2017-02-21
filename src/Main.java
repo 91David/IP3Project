@@ -1,5 +1,3 @@
-import com.dropbox.core.DbxException;
-import com.dropbox.core.DbxRequestConfig;
 import com.dropbox.core.v2.DbxClientV2;
 
 import java.sql.Connection;
@@ -30,7 +28,13 @@ public class Main {
         // User.verifyPassword("SomeonesPassword", hash);
 
         // 3.    Generate MD5 checksum for file.
-        // System.out.println(Document.generateChecksum("md5test.txt"));
+        System.out.println(Document.generateChecksum("test.txt"));
+
+        // 4.   Upload and Download files to dropbox
+        Document.uploadFile("test.txt", dropboxConnection);
+
+        // 5.   View DropBox folder contents.
+        Document.viewFolder("", dropboxConnection);
 
         // Exit application.
         System.exit(0);
