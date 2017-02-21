@@ -1,23 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="./SCSS/stylesheet.css">    
-</head>
-<body>
+<html>
 
-    <div class="testing">
-        <h1 class="title">Title</h1>
-        <p class="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat tempor dolor, a aliquam mauris fringilla nec. Sed libero mi, scelerisque eget malesuada nec, malesuada sed tellus. In hac habitasse platea dictumst. Pellentesque pretium id elit vitae iaculis. Etiam id nibh vel erat convallis vulputate. Donec dapibus condimentum scelerisque. Pellentesque et sapien quis augue accumsan volutpat. Nunc vehicula eget risus quis tincidunt.
-        </p>
-        <p class="paragraph">
-            Vivamus non vehicula purus. Nullam consectetur quam neque, ac venenatis ipsum lobortis sed. Aenean porttitor et neque non suscipit. Proin pellentesque tellus ac viverra ultrices. Integer sit amet facilisis elit. Proin nisi justo, viverra in elit ac, volutpat gravida felis. Etiam et lobortis magna. Nullam dolor lacus, molestie ac dignissim a, imperdiet eget est. Fusce porttitor, nisi sed efficitur rutrum, magna neque sodales augue, id euismod felis mi non velit. Donec blandit sapien ipsum. Fusce in nibh ac magna porttitor accumsan at ut dolor. Aliquam sed vehicula justo.
-        </p>
+<head>
+    <link rel="stylesheet" href="SCSS/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> </head>
+
+<body>
+    <div>
+        <nav>
+            <div class="userprofile">
+                <div class="usernameimage">
+                    <h3><img src="images/logo.jpg" class="username"></h3> </div>
+                <div class="username">
+                    <h3>Ideagen IP3</h3> </div>
+            </div>
+            <div class="tasks">
+                <table style="width:100%">
+                    <tr>
+                        <th colspan="3">TASKS</th>
+                    </tr>
+                    <tr class="numbers">
+                        <td class="red">5</td>
+                        <td class="amber">0</td>
+                        <td class="blue">7</td>
+                    </tr>
+                    <tr>
+                        <td>Overdue</td>
+                        <td>This Week</td>
+                        <td>Outstanding</td>
+                    </tr>
+                </table>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/Home.svg" hspace="10px">Home</a>
+                </li>
+                <li>
+                    <a href="#Dashboard"><img src="images/Dashboard.svg" hspace="10px">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#Business"><img src="images/Business.svg" hspace="10px">Business Intelligence</a>
+                </li>
+                <li>
+                    <a href="#Audits"><img src="images/Audits.svg" hspace="10px">Audits</a>
+                </li>
+                <li>
+                    <a href="#Documents"><img src="images/Documents.svg" hspace="10px">Documents</a>
+                </li>
+                <li>
+                    <a href="#Reporting"><img src="images/Reporting.svg" hspace="10px">Reporting</a>
+                </li>
+                <li>
+                    <a href="#Risk"><img src="images/Risk.svg" hspace="10px">Risk</a>
+                </li>
+                <li>
+                    <a href="#Administration"><img src="images/Admin.svg" hspace="10px">Administration</a>
+                </li>
+                <li>
+                    <a href="#Contact"><img src="images/Contact.svg" hspace="10px">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <header> <img src="images/logo-ideagen-oneCol.png" width="130px" ; height="30px" ;> </header>
     </div>
-    
-    <button class="btn huge success">Test</button>
-    
 </body>
+
 </html>
