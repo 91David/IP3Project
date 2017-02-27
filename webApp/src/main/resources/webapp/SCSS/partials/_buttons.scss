@@ -1,7 +1,10 @@
+//**************** BUTTON PARTIAL ****************
+//BASIC BUTTON
 .btn {
     border-radius: 2px;
 }
 
+//BUTTON SIZING
 .tiny {
     padding-left: 10px;
     padding-right: 10px;
@@ -45,6 +48,7 @@
     font-size: 24px;
 }
 
+//BUTTON COLOURS
 //PRIMARY
 .primary {
     background-color: $primaryAction;

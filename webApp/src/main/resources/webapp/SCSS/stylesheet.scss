@@ -1,14 +1,21 @@
+//******************** IMPORTS ********************
+//SCSS PARTIAL FILES
 @import './partials/palette';
 @import './partials/buttons';
 @import './partials/navigation';
+@import './partials/document';
 
+//FONTS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
+//***************** BASIC STYLES ******************
+//RESET
 body {
     padding: 0;
     margin: 0;
 }
 
+//FORMATTING
 .title {
     font-family: 'Roboto';
 }
@@ -17,6 +24,8 @@ body {
     font-family: 'Open Sans';
 }
 
+
+//HEADER
 header {
     background: $MG5;
     padding-top: 10px;
@@ -24,8 +33,10 @@ header {
     .icons {
         float: right;
         .icon {
-            padding-right: 20px;
-            color: $alertDanger;
+            padding-right: 30px;
         }
+    }
+    .brand {
+        padding-left: 30px;
     }
 }

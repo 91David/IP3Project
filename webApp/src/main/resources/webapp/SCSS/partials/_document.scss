@@ -1,0 +1,44 @@
+//********* TOOLBAR AND DOCUMENT PARTIAL ***********
+//TOOLBAR
+.toolbar {
+    padding-bottom: 20px;
+    .search {
+        padding: 5px;
+        width: 130px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        font-family: 'open-sans';
+        font-size: 16px;  
+    }
+    input:focus {
+        width: 30%;
+    }
+}
+
+//DOCUMENT
+.document {
+    font-family: 'open-sans';
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    .docTitle {
+        font-family: 'roboto';
+        padding-bottom: 5px;
+        text-decoration: underline;
+    }
+    .down {
+        float: right;
+        vertical-align: middle;
+        margin-right: 30px;
+        visibility: hidden;
+    }
+}
+
+.document:hover {
+    background-color: $MG10;
+    .down {
+        visibility: visible;
+    }
+}
