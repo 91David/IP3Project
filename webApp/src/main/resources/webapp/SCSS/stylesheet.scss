@@ -1,0 +1,31 @@
+@import './partials/palette';
+@import './partials/buttons';
+@import './partials/navigation';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Roboto';
+}
+
+.paragraph {
+    font-family: 'Open Sans';
+}
+
+header {
+    background: $MG5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .icons {
+        float: right;
+        .icon {
+            padding-right: 20px;
+            color: $alertDanger;
+        }
+    }
+}

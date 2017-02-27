@@ -1,248 +1,298 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 /* line 1, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .btn {
-  border-radius: 2px; }
+    border-radius: 2px;
+}
 
 /* line 5, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .tiny {
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 24px;
-  font-size: 10px; }
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    font-size: 10px;
+}
 
 /* line 11, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .small {
-  padding-left: 12px;
-  padding-right: 12px;
-  height: 31px;
-  font-size: 12px; }
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 31px;
+    font-size: 12px;
+}
 
 /* line 17, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .medium {
-  padding-left: 14px;
-  padding-right: 14px;
-  height: 37px;
-  font-size: 14px; }
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 37px;
+    font-size: 14px;
+}
 
 /* line 23, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .large {
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 44px;
-  font-size: 16px; }
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 44px;
+    font-size: 16px;
+}
 
 /* line 29, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .big {
-  padding-left: 18px;
-  padding-right: 18px;
-  height: 50px;
-  font-size: 18px; }
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 50px;
+    font-size: 18px;
+}
 
 /* line 35, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .huge {
-  padding-left: 21px;
-  padding-right: 21px;
-  height: 60px;
-  font-size: 21px; }
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 60px;
+    font-size: 21px;
+}
 
 /* line 41, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .massive {
-  padding-left: 24px;
-  padding-right: 24px;
-  height: 71px;
-  font-size: 24px; }
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 71px;
+    font-size: 24px;
+}
 
 /* line 49, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .primary {
-  background-color: #18aee0;
-  color: #fff;
-  border: 1px solid #18aee0; }
+    background-color: #18aee0;
+    color: #fff;
+    border: 1px solid #18aee0;
+}
 
 /* line 55, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .primary:hover {
-  background-color: #2fb6e3;
-  border: 1px solid #2fb6e3; }
+    background-color: #2fb6e3;
+    border: 1px solid #2fb6e3;
+}
 
 /* line 60, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .primary:active, .primary:focus {
-  border: 1px solid #138bb3; }
+    border: 1px solid #138bb3;
+}
 
 /* line 64, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .secondary {
-  background-color: white;
-  color: #18aee0;
-  border: 1px solid #18aee0; }
+    background-color: white;
+    color: #18aee0;
+    border: 1px solid #18aee0;
+}
 
 /* line 70, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .secondary:hover {
-  background-color: #f3f4f5; }
+    background-color: #f3f4f5;
+}
 
 /* line 74, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .secondary:active, secondary:focus {
-  border: 1px solid #cccccc; }
+    border: 1px solid #cccccc;
+}
 
 /* line 79, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .error {
-  background-color: #f22929;
-  color: #fff;
-  border: 1px solid #f22929; }
+    background-color: #f22929;
+    color: #fff;
+    border: 1px solid #f22929;
+}
 
 /* line 85, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .error:hover {
-  background-color: #f33e3e;
-  border: 1px solid #f33e3e; }
+    background-color: #f33e3e;
+    border: 1px solid #f33e3e;
+}
 
 /* line 90, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .error:active, .error:focus {
-  border: 1px solid #c22121; }
+    border: 1px solid #c22121;
+}
 
 /* line 94, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .warning {
-  background-color: #ff8400;
-  color: #fff;
-  border: 1px solid #ff8400; }
+    background-color: #ff8400;
+    color: #fff;
+    border: 1px solid #ff8400;
+}
 
 /* line 100, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .warning:hover {
-  background-color: #ff901a;
-  border: 1px solid #ff901a; }
+    background-color: #ff901a;
+    border: 1px solid #ff901a;
+}
 
 /* line 105, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .warning:active, .warning:focus {
-  border: 1px solid #cc6a00; }
+    border: 1px solid #cc6a00;
+}
 
 /* line 110, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .success {
-  background-color: #54c600;
-  color: #fff;
-  border: 1px solid #54c600; }
+    background-color: #54c600;
+    color: #fff;
+    border: 1px solid #54c600;
+}
 
 /* line 116, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .success:hover {
-  background-color: #65cc1a;
-  border: 1px solid #65cc1a; }
+    background-color: #65cc1a;
+    border: 1px solid #65cc1a;
+}
 
 /* line 121, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_buttons.scss */
 .success:active, .success:focus {
-  border: 1px solid #439e00; }
+    border: 1px solid #439e00;
+}
 
 /* line 1, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 nav {
-  background-color: #1A2426;
-  width: 30%;
-  float: left;
-  font-family: 'Open Sans', sans-serif; }
+    background-color: #1A2426;
+    width: 30%;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+}
 
 /* line 8, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-  overflow: hidden; }
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
 
 /* line 15, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 li a {
-  display: block;
-  color: white;
-  text-align: left;
-  padding: 10px;
-  text-decoration: none;
-  background-color: #1A2426;
-  border-left: 0px solid #1A2426;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
-  /* line 26, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
-  li a img {
-    margin-left: 0px;
-    vertical-align: middle; }
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #1A2426;
+    border-left: 0px solid #1A2426;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+/* line 26, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
+li a img {
+    margin-left: 15px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
 
 /* line 32, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 li a:hover {
-  background-color: #593B39;
-  border-left: 5px solid #BF3944; }
+    background-color: #593B39;
+    border-left: 5px solid #BF3944;
+}
 
 /* line 39, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 img.username {
-  border-radius: 50%;
-  border: 2px solid #B6C1C7;
-  width: 50px;
-  display: block; }
+    border-radius: 50%;
+    border: 2px solid #B6C1C7;
+    width: 50px;
+    display: block;
+}
 
 /* line 46, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 table {
-  font-family: 'Roboto', sans-serif;
-  border-collapse: collapse; }
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
 
 /* line 51, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 table, th {
-  background-color: #617279;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  text-align: left; }
+    background-color: #617279;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    text-align: left;
+}
 
 /* line 59, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 table, tr {
-  background-color: #38474E;
-  text-align: center; }
+    background-color: #38474E;
+    text-align: center;
+}
 
 /* line 64, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 tr.numbers {
-  height: 75px;
-  font-size: x-large; }
-  /* line 72, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
-  tr.numbers td.amber {
+    height: 75px;
+    font-size: x-large;
+}
+
+/* line 72, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
+tr.numbers td.amber {
     border-top: 2px solid #ff8400;
     border-left: 1px solid black;
-    border-right: 1px solid black; }
-  /* line 78, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
-  tr.numbers td.blue {
-    border-top: 2px solid #6e99d4; }
+    border-right: 1px solid black;
+}
+
+/* line 78, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
+tr.numbers td.blue {
+    border-top: 2px solid #6e99d4;
+}
 
 /* line 83, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 div.username {
-  padding: 15px;
-  font-family: 'Roboto', sans-serif;
-  margin: auto;
-  display: block;
-  text-align: left; }
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
 
 /* line 91, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 div.usernameimage {
-  font-family: 'Roboto', sans-serif;
-  width: 20%;
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px; }
+    font-family: 'Roboto', sans-serif;
+    width: 20%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* line 99, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/partials/_navigation.scss */
 .username h3 {
-  color: white; }
+    color: white;
+}
 
 /* line 7, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
 body {
-  padding: 0;
-  margin: 0; }
+    padding: 0;
+    margin: 0;
+}
 
 /* line 12, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
 .title {
-  font-family: 'Roboto'; }
+    font-family: 'Roboto';
+}
 
 /* line 16, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
 .paragraph {
-  font-family: 'Open Sans'; }
+    font-family: 'Open Sans';
+}
 
 /* line 20, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
 header {
-  background: #f3f4f5;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  /* line 24, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
-  header .icons {
-    float: right; }
-    /* line 26, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
-    header .icons .icon {
-      padding-right: 20px;
-      color: #f22929; }
+    background: #f3f4f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* line 24, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
+header .icons {
+    float: right;
+}
+
+/* line 26, C:/Users/William/Desktop/WPD2/IP3Project/webApp/SCSS/stylesheet.scss */
+header .icons .icon {
+    padding-right: 20px;
+    color: #f22929;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */
