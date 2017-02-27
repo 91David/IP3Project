@@ -16,12 +16,17 @@ li a {
     display: block;
     color: white;
     text-align: left;
-    padding: 16px;
+    padding: 10px;
     text-decoration: none;
     background-color: $navBG;
     border-left: 0px solid $navBG;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
+    
+    img {
+        margin-left: 0px;
+        vertical-align: middle
+    }
 }
 
 li a:hover {
@@ -59,21 +64,20 @@ table, tr {
 tr.numbers {
     height: 75px;
     font-size: x-large;
+    
+    td.red {
+        //border-top: 2px solid $alertDanger;
+    }
 
-}
+    td.amber {
+        border-top: 2px solid $alertWarning;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
 
-td.amber {
-    border-top: 2px solid #FF8500;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-td.red {
-    border-top: 2px solid red;
-}
-
-td.blue {
-    border-top: 2px solid #709DBC;
+    td.blue {
+        border-top: 2px solid $alertOngoing;
+    }
 }
 
 div.username {
