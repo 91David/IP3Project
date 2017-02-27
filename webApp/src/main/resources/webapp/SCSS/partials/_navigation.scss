@@ -2,7 +2,8 @@
 
 nav {
     background-color: $navBG;
-    width: 30%;
+    width: 20%;
+    height: 100vh;
     float: left;
     font-family: 'Open Sans', sans-serif;
 }
@@ -22,8 +23,8 @@ li a {
     text-decoration: none;
     background-color: $navBG;
     border-left: 0px solid $navBG;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
     
     img {
         margin-left: 0px;
@@ -35,8 +36,6 @@ li a:hover {
     background-color: $hoverBG;
     border-left: 5px solid $hoverBorder;
 }
-
-
 
 img.username {
     border-radius: 50%;
