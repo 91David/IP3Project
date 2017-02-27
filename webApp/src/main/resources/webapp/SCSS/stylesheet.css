@@ -129,18 +129,19 @@
 /* line 3, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 nav {
   background-color: #1A2426;
-  width: 30%;
+  width: 20%;
+  height: 100vh;
   float: left;
   font-family: 'Open Sans', sans-serif; }
 
-/* line 10, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 11, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 ul {
   list-style-type: none;
   margin: 0;
   padding-left: 0;
   overflow: hidden; }
 
-/* line 17, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 18, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 li a {
   display: block;
   color: white;
@@ -149,31 +150,31 @@ li a {
   text-decoration: none;
   background-color: #1A2426;
   border-left: 0px solid #1A2426;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
-  /* line 28, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+  /* line 29, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
   li a img {
     margin-left: 0px;
     vertical-align: middle; }
 
-/* line 34, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 35, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 li a:hover {
   background-color: #593B39;
   border-left: 5px solid #BF3944; }
 
-/* line 41, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 40, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 img.username {
   border-radius: 50%;
   border: 2px solid #B6C1C7;
   width: 50px;
   display: block; }
 
-/* line 48, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 47, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 table {
   font-family: 'Roboto', sans-serif;
   border-collapse: collapse; }
 
-/* line 53, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 52, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 table, th {
   background-color: #617279;
   padding-top: 5px;
@@ -181,25 +182,25 @@ table, th {
   padding-left: 15px;
   text-align: left; }
 
-/* line 61, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 60, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 table, tr {
   background-color: #38474E;
   text-align: center; }
 
-/* line 66, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 65, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 tr.numbers {
   height: 75px;
   font-size: x-large; }
-  /* line 74, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+  /* line 73, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
   tr.numbers td.amber {
     border-top: 2px solid #ff8400;
     border-left: 1px solid black;
     border-right: 1px solid black; }
-  /* line 80, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+  /* line 79, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
   tr.numbers td.blue {
     border-top: 2px solid #6e99d4; }
 
-/* line 85, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 84, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 div.username {
   padding: 15px;
   font-family: 'Roboto', sans-serif;
@@ -207,7 +208,7 @@ div.username {
   display: block;
   text-align: left; }
 
-/* line 93, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 92, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 div.usernameimage {
   font-family: 'Roboto', sans-serif;
   width: 20%;
@@ -215,7 +216,7 @@ div.usernameimage {
   padding-left: 15px;
   padding-right: 15px; }
 
-/* line 101, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
+/* line 100, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 .username h3 {
   color: white; }
 
