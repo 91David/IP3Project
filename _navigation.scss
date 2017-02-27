@@ -1,0 +1,102 @@
+//************* NAVIGATION PARTIAL ***************
+
+nav {
+    background-color: $navBG;
+    width: 20%;
+    height: 100vh;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    background-color: $navBG;
+    border-left: 0px solid $navBG;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    
+    img {
+        margin-left: 0px;
+        vertical-align: middle
+    }
+}
+
+li a:hover {
+    background-color: $hoverBG;
+    border-left: 5px solid $hoverBorder;
+}
+
+img.username {
+    border-radius: 50%;
+    border: 2px solid #B6C1C7;
+    width: 50px;
+    display: block;
+}
+
+table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+
+table, th {
+    background-color: #617279;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+table, tr {
+    background-color: #38474E;
+    text-align: center;
+}
+
+tr.numbers {
+    height: 75px;
+    font-size: x-large;
+    
+    td.red {
+        //border-top: 2px solid $alertDanger;
+    }
+
+    td.amber {
+        border-top: 2px solid $alertWarning;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    td.blue {
+        border-top: 2px solid $alertOngoing;
+    }
+}
+
+div.username {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    display: block;
+    text-align: left;
+}
+
+div.usernameimage {
+    font-family: 'Roboto', sans-serif;
+    width: 20%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.username h3 {
+    color: white;
+}
