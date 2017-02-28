@@ -240,6 +240,81 @@ tr.numbers td.blue {
     border-top: 2px solid #6e99d4;
 }
 
+.taskbox {
+    width: 100%;
+    float: left;
+}
+
+.taskbar {
+    width: 100%;
+    background-color: #617279;
+    float: left;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.tasks1 {
+    width: calc(99% / 3);
+    background-color: #38474E;
+    height: 50px;
+    float: left;
+    border-top: 3px solid #BF3944;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.tasks2 {
+    width: calc(99% / 3);
+    background-color: #38474E;
+    height: 50px;
+    float: left;
+    border-top: 3px solid #BF691E;
+    border-left: 1px solid #1A2426;
+    border-right: 1px solid #1A2426;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.tasks3 {
+    width: calc(99% / 3);
+    background-color: #38474E;
+    height: 50px;
+    float: left;
+    border-top: 3px solid #6B98b7;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.textpad {
+    vertical-align: middle;
+    font-size: small;
+}
+
+.textpad1 {
+    vertical-align: middle;
+    font-size: medium;
+}
+
+.texttask {
+    padding-left: 15px;
+}
+
+.tools {
+    width: 100%;
+    float: left;
+}
+
 /* line 84, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 div.username {
     padding: 15px;
@@ -306,6 +381,25 @@ section ul li a {
 .document .docTitle {
     font-family: 'roboto';
     padding-bottom: 5px;
+    width: 20%;
+}
+
+.document .docAuthor {
+    font-family: 'roboto';
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.document .docCreation {
+    font-family: 'roboto';
+    padding-bottom: 5px;
+    width: 20%;
+}
+
+.document .docVersion {
+    font-family: 'roboto';
+    padding-bottom: 5px;
+    width: 5%;
 }
 
 /* line 31, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
