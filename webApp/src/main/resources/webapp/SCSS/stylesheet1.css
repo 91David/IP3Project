@@ -151,7 +151,7 @@
 
 /* line 3, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 nav {
-    background-color: blue;
+    background-color: #1A2426;
     width: 20%;
     height: 100vh;
     float: left;
@@ -270,7 +270,6 @@ tr.numbers td.blue {
     color: white;
     text-align: center;
     padding-top: 5px;
-
 }
 
 .tasks2 {
@@ -285,7 +284,6 @@ tr.numbers td.blue {
     color: white;
     text-align: center;
     padding-top: 5px;
-
 }
 
 .tasks3 {
@@ -377,10 +375,6 @@ section ul li {
     padding-left: 30px;
 }
 
-section ul li a {
-
-}
-
 /* line 26, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
 .document .docTitle {
     font-family: 'roboto';
@@ -449,13 +443,17 @@ header {
 /* line 33, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 header .icons {
     float: right;
-    vertical-align: middle;
-    padding: 5px;
+}
+
+header .icon {
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 /* line 35, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 header .icons .icon {
     padding-right: 30px;
+    padding-left: 30px;
 }
 
 /* line 39, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
