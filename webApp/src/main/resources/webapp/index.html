@@ -6,6 +6,34 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="SCSS/stylesheet.css">
+    <link rel="javascript" href="Javascript/javascript.js">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    <script>
+        /* When the user clicks on the button,
+         toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            //noinspection JSValidateTypes
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
 </head>
 
@@ -38,28 +66,33 @@
                     <a href="index.html"><img src="images/Home.svg">Home</a>
                 </li>
                 <li>
-                    <a href="#Dashboard"><img src="images/Dashboard.svg">Dashboard</a>
+                    <a href="#"><img src="images/Dashboard.svg">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#Business"><img src="images/Business.svg">Business Intelligence</a>
+                    <a href="#"><img src="images/Business.svg">Business Intelligence</a>
                 </li>
                 <li>
-                    <a href="#Audits"><img src="images/Audits.svg">Audits</a>
+                    <a href="#"><img src="images/Audits.svg">Audits</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="images/Documents.svg">Documents</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#Documents"><img src="images/Documents.svg">Documents</a>
+                    <a href="#"><img src="images/Reporting.svg">Reporting</a>
                 </li>
                 <li>
-                    <a href="#Reporting"><img src="images/Reporting.svg">Reporting</a>
+                    <a href="#"><img src="images/Risk.svg">Risk</a>
                 </li>
                 <li>
-                    <a href="#Risk"><img src="images/Risk.svg">Risk</a>
+                    <a href="#"><img src="images/Admin.svg">Administration</a>
                 </li>
                 <li>
-                    <a href="#Administration"><img src="images/Admin.svg">Administration</a>
-                </li>
-                <li>
-                    <a href="#Contact"><img src="images/Contact.svg">Contact</a>
+                    <a href="#"><img src="images/Contact.svg">Contact</a>
                 </li>
             </ul>
         </div>
@@ -68,7 +101,7 @@
 
     <header>
 
-        <img class="icon" src="images/logo-ideagen-oneCol.png" width="130px" ; height="30px" ;>
+        <img class="icon" src="images/logo-ideagen-oneCol.png" width="130px" height="30px">
 
         <div class="icons">
             <img src="images/Documents.svg" alt="" class="icon">
@@ -89,9 +122,11 @@
 
     <section>
         <div class="document">
+
+            <button class="down btn medium secondary">Download</button>
+            <button class="down btn medium secondary">EDIT</button>
+
             <ul>
-                <button class="down btn medium secondary">Download</button>
-                <button class="down btn medium secondary">OPEN</button>
                 <li class="docTitle">ideagen-report.doc</li>
                 <li class="docAuthor">Ideagen</li>
                 <li class="docCreation">27.02.2017 14:32:03</li>
@@ -102,8 +137,10 @@
 
     <section>
         <div class="document">
+
+            <button class="down btn medium secondary">Download</button>
+
             <ul>
-                <button class="down btn medium secondary">Download</button>
                 <li class="docTitle">ideagen-presentation.pdf</li>
                 <li class="docAuthor">GCU Team 10</li>
                 <li class="docCreation">14.03.2017 10:11:42</li>
@@ -114,9 +151,10 @@
 
     <section>
         <div class="document">
+            <button class="down btn medium secondary">Download</button>
+            <button class="down btn medium secondary">EDIT</button>
+
             <ul>
-                <button class="down btn medium secondary">Download</button>
-                <button class="down btn medium secondary">OPEN</button>
                 <li class="docTitle">ideagen-database.xlsx</li>
                 <li class="docAuthor">Ideagen</li>
                 <li class="docCreation">02.02.2017 09:05:27</li>

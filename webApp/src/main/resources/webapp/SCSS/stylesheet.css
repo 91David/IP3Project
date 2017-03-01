@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 /* line 3, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_buttons.scss */
 .btn {
     border-radius: 2px;
@@ -91,7 +90,7 @@
 }
 
 /* line 78, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_buttons.scss */
-.secondary:active, secondary:focus {
+.secondary:active, .secondary:focus {
     border: 1px solid #cccccc;
 }
 
@@ -158,8 +157,9 @@ nav {
     font-family: 'Open Sans', sans-serif;
 }
 
-searchbutton {
-    float: right;
+section {
+    float: left;
+    width: 75%;
 }
 
 /* line 11, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
@@ -178,14 +178,14 @@ li a {
     padding: 10px;
     text-decoration: none;
     background-color: #1A2426;
-    border-left: 0px solid #1A2426;
+    border-left: 0 solid #1A2426;
     -webkit-transition: all .3s ease-in;
     transition: all .3s ease-in;
 }
 
 /* line 29, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
 li a img {
-    margin-left: 0px;
+    margin-left: 0;
     padding-left: 15px;
     padding-right: 20px;
     vertical-align: bottom;
@@ -350,7 +350,7 @@ div.usernameimage {
     width: 130px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    font-family: 'open-sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
@@ -361,7 +361,7 @@ div.usernameimage {
 
 /* line 19, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
 .document {
-    font-family: 'open-sans';
+    font-family: 'Open Sans', sans-serif;
     padding: 10px;
 
     -webkit-transition: all 0.4s ease-in-out;
@@ -372,32 +372,34 @@ section ul li {
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
 }
 
 /* line 26, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
 .document .docTitle {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
-    width: 20%;
+    width: 200px;
+    padding-left: 30px;
 }
 
 .document .docAuthor {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
-    width: 10%;
+    width: 100px;
+    padding-left: 30px;
 }
 
 .document .docCreation {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
-    width: 20%;
+    width: 200px;
+    padding-left: 30px;
 }
 
 .document .docVersion {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
-    width: 5%;
+    padding-left: 30px;
 }
 
 /* line 31, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
@@ -410,6 +412,8 @@ section ul li {
 /* line 39, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
 .document:hover {
     background-color: #e7eaec;
+    border-left: 5px solid #8BB6E3;
+
 }
 
 /* line 41, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
@@ -425,12 +429,12 @@ body {
 
 /* line 19, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 .title {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 /* line 23, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 .paragraph {
-    font-family: 'Open Sans';
+    font-family: 'Roboto', sans-serif;
 }
 
 /* line 29, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
@@ -438,6 +442,8 @@ header {
     background: #f3f4f5;
     padding-top: 10px;
     padding-bottom: 10px;
+    float: left;
+    width: 75%;
 }
 
 /* line 33, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
@@ -461,4 +467,13 @@ header .brand {
     padding-left: 30px;
 }
 
-/*# sourceMappingURL=stylesheet.css.map */
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    padding-left: 30px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
