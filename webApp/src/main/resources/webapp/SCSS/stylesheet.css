@@ -205,44 +205,7 @@ img.username {
     display: block;
 }
 
-/* line 47, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-table {
-    font-family: 'Roboto', sans-serif;
-    border-collapse: collapse;
-}
 
-/* line 52, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-table, th {
-    background-color: #617279;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    text-align: left;
-}
-
-/* line 60, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-table, tr {
-    background-color: #38474E;
-    text-align: center;
-}
-
-/* line 65, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-tr.numbers {
-    height: 75px;
-    font-size: x-large;
-}
-
-/* line 73, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-tr.numbers td.amber {
-    border-top: 2px solid #ff8400;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-}
-
-/* line 79, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_navigation.scss */
-tr.numbers td.blue {
-    border-top: 2px solid #6e99d4;
-}
 
 .taskbox {
     width: 100%;
@@ -301,11 +264,14 @@ tr.numbers td.blue {
 .textpad {
     vertical-align: middle;
     font-size: small;
+
 }
 
-.textpad1 {
+.textpad1 a {
     vertical-align: middle;
     font-size: medium;
+    color: white;
+
 }
 
 .texttask {
@@ -476,4 +442,46 @@ header .brand {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display:block;
+}
+
+/* Table Content */
+
+table {
+    background-color: #F3F3F3;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #E7EAEC;
+    border: 1px solid #E7EAEC;
+    height: 40px;
+    color: #222E32;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+tr {
+    height: 60px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    border-color: #E7EAEC;
+}
+
+td,
+th {
+    text-align: left;
+    padding-left: 30px;
+}
+
+td a {
+    display: block;
+    text-decoration: none;
+    color: #222E32;
+}
+
+tr:hover {
+    background-color: #F2D0CD;
+    border: 1px solid #F2BAB5;
 }
