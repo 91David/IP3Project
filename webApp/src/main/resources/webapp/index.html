@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
-    <script>
+    <script type="text/javascript">
         /* When the user clicks on the button,
          toggle between hiding and showing the dropdown content */
         function myFunction() {
@@ -19,7 +18,7 @@
         }
 
         // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             //noinspection JSValidateTypes
             if (!event.target.matches('.dropbtn')) {
 
@@ -33,6 +32,17 @@
                 }
             }
         }
+
+    </script>
+
+    <script>
+        $(function () {
+            $(".onclick").hide();
+            $(".dropClick").on("click",function () {
+                var $nextDrop = $(this).parent().find(".dropDown").first();
+                $nextDrop.slideToggle("slow");
+            });
+        });
     </script>
 
 </head>
@@ -136,7 +146,8 @@
 
             <tbody>
 
-            <tr>
+            <tr class="dropClick">
+
                 <td>DOC1</td>
 
                 <td>IP3.doc</td>
@@ -147,7 +158,103 @@
 
                 <td>2.0</td>
 
+            <tr class="onclick">
+
+
+
+                <td class="submenu" colspan="5">
+
+                    <div class="select">
+
+                    <select>
+                        <option value="Actions">Action</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Progress">In Progress</option>
+                        <option value="Overdue">Overdue</option>
+                    </select>
+                    </div>
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>DETAILS</th>
+                            <th>NUMBER</th>
+                            <th>TARGET DATE</th>
+                            <th>RESPONSE</th>
+                            <th>COMPLETION DATE</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>Confirm Impact</td>
+                            <td>1</td>
+                            <td>14/04/2017 14:05:32</td>
+                            <td>In Progress</td>
+                            <td>27/03/2017 10:27:55</td>
+                        </tr>
+
+                        <tr>
+                            <td>Confirm Impact</td>
+                            <td>2</td>
+                            <td>14/04/2017 14:05:32</td>
+                            <td>Outstanding</td>
+                            <td>27/03/2017 10:27:55</td>
+                        </tr>
+
+                        <tr>
+                            <td>Confirm Impact</td>
+                            <td>3</td>
+                            <td>14/04/2017 14:05:32</td>
+                            <td>Done</td>
+                            <td>27/03/2017 10:27:55</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </td>
             </tr>
+
+            <tr class="dropClick">
+
+                <td>DOC1</td>
+
+                <td>IP3.doc</td>
+
+                <td>GCU Team 10</td>
+
+                <td>02/02/2017 14:05:32</td>
+
+                <td>2.0</td>
+            </tr>
+
+            <tr class="dropClick">
+
+                <td>DOC1</td>
+
+                <td>IP3.doc</td>
+
+                <td>GCU Team 10</td>
+
+                <td>02/02/2017 14:05:32</td>
+
+                <td>2.0</td>
+            </tr>
+
+            <tr class="dropClick">
+
+                <td>DOC1</td>
+
+                <td>IP3.doc</td>
+
+                <td>GCU Team 10</td>
+
+                <td>02/02/2017 14:05:32</td>
+
+                <td>2.0</td>
+            </tr>
+
 
             </tbody>
         </table>

@@ -1,9 +1,3 @@
-/**
- * Created by altho_000 on 01/03/2017.
- */
-
-/* When the user clicks on the button,
- toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -21,4 +15,12 @@ window.onclick = function(event) {
             }
         }
     }
-}
+};
+
+$(function () {
+    $(".dropDown").hide();
+    $(".dropClick").on("click",function () {
+        var $nextDrop = $(this).parent().find(".dropDown").first();
+        $nextDrop.slideToggle("slow");
+    });
+});
