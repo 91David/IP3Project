@@ -1,42 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="SCSS/stylesheet.css">
     <link rel="javascript" href="Javascript/javascript.js">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-        /* When the user clicks on the button,
-                 toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            //noinspection JSValidateTypes
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
-
-
-
+    <script type="text/javascript" src="Javascript/dropdown.js"></script>
     <script>
         $(document).ready(function () {
             $("tr.dropClick").click(function () {
@@ -44,22 +16,17 @@
             });
         });
     </script>
-
 </head>
 
 <body>
-
     <div>
-
         <nav>
-
             <div class="userprofile">
                 <div class="usernameimage">
                     <h3><img src="images/logo.jpg" class="username"></h3></div>
                 <div class="username">
                     <h3>Ideagen IP3</h3></div>
             </div>
-
             <div class="taskbox">
                 <div class="taskbar"><a class="texttask">TASKS</a></div>
                 <div class="taskbar">
@@ -71,9 +38,7 @@
                         <br/><a class="textpad">Outstanding</a></div>
                 </div>
             </div>
-
             <div class="tools">
-
                 <ul>
                     <li>
                         <a href="index.html"><img src="images/Home.svg">Home</a>
@@ -89,11 +54,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="images/Documents.svg">Documents</a>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
+                        <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
                     </li>
                     <li>
                         <a href="#"><img src="images/Reporting.svg">Reporting</a>
@@ -109,30 +70,17 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
-
-        <header>
-
-            <img class="icon" src="images/logo-ideagen-oneCol.png" width="130px" height="30px">
-
-            <div class="icons">
-                <img src="images/Documents.svg" alt="" class="icon">
-            </div>
-
+        <header> <img class="icon" src="images/logo-ideagen-oneCol.png" width="130px" height="30px">
+            <div class="icons"> <img src="images/Documents.svg" alt="" class="icon"> </div>
             <div class="icons">
                 <input class="search" type="text" name="search" placeholder="Search">
                 <button class="btn primary small">Search</button>
             </div>
-
         </header>
-
         <section>
-            <div class="toolbar">
-
-            </div>
+            <div class="toolbar"> </div>
         </section>
-
         <section>
             <table>
                 <thead>
@@ -142,30 +90,18 @@
                         <th>OWNER</th>
                         <th>ACTIVE DATE</th>
                         <th>REVISION</th>
-
                     </tr>
                 </thead>
-
                 <tbody>
-
                     <tr class="dropClick">
-
                         <td>DOC1</td>
-
                         <td>IP3.doc</td>
-
                         <td>GCU Team 10</td>
-
                         <td>02/02/2017 14:05:32</td>
-
                         <td>2.0</td>
-
                         <tr class="onClick">
-
                             <td class="submenu" colspan="5">
-
                                 <div class="select">
-
                                     <select>
                                         <option value="Actions">Action</option>
                                         <option value="Completed">Completed</option>
@@ -173,7 +109,6 @@
                                         <option value="Overdue">Overdue</option>
                                     </select>
                                 </div>
-
                                 <table>
                                     <thead>
                                         <tr>
@@ -184,9 +119,7 @@
                                             <th>COMPLETION DATE</th>
                                         </tr>
                                     </thead>
-
                                     <tbody>
-
                                         <tr>
                                             <td>Confirm Impact</td>
                                             <td>1</td>
@@ -194,7 +127,6 @@
                                             <td>In Progress</td>
                                             <td>27/03/2017 10:27:55</td>
                                         </tr>
-
                                         <tr>
                                             <td>Confirm Impact</td>
                                             <td>2</td>
@@ -202,7 +134,6 @@
                                             <td>Outstanding</td>
                                             <td>27/03/2017 10:27:55</td>
                                         </tr>
-
                                         <tr>
                                             <td>Confirm Impact</td>
                                             <td>3</td>
@@ -210,56 +141,34 @@
                                             <td>Done</td>
                                             <td>27/03/2017 10:27:55</td>
                                         </tr>
-
                                     </tbody>
                                 </table>
                             </td>
                         </tr>
-
                         <tr>
-
                             <td>DOC1</td>
-
                             <td>IP3.doc</td>
-
                             <td>GCU Team 10</td>
-
                             <td>02/02/2017 14:05:32</td>
-
                             <td>2.0</td>
                         </tr>
-
                         <tr>
-
                             <td>DOC1</td>
-
                             <td>IP3.doc</td>
-
                             <td>GCU Team 10</td>
-
                             <td>02/02/2017 14:05:32</td>
-
                             <td>2.0</td>
                         </tr>
-
                         <tr>
-
                             <td>DOC1</td>
-
                             <td>IP3.doc</td>
-
                             <td>GCU Team 10</td>
-
                             <td>02/02/2017 14:05:32</td>
-
                             <td>2.0</td>
                         </tr>
-
-
                 </tbody>
             </table>
         </section>
-
     </div>
 </body>
 
