@@ -4,9 +4,7 @@ import com.dropbox.core.v2.files.FileMetadata;
 import com.dropbox.core.v2.files.ListFolderResult;
 import com.dropbox.core.v2.files.Metadata;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -54,6 +52,24 @@ class Document {
         return null;
     }
 
+    /** Downloads a file from dropbox
+     *
+     * @param client    Dropbox connection instance
+     * @param fileName  Filename we want to download.
+     * @return  true if file is downloaded.
+     */
+    static Boolean downloadFile(DbxClientV2 client, String fileName) {
+        OutputStream outputStream = null;
+        try {
+            outputStream = new FileOutputStream(fileName);
+            FileMetadata metadata = client.files().downloadBuilder("/" + fileName).download(outputStream);
+        } catch (DbxException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
 
     /**
      * Uploads a file to a specified folder path in DropBox.

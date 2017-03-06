@@ -12,14 +12,14 @@ public class Main {
             System.out.println("Failure to Connect to DropBox. Exiting...");
             // System.exit(0);
         }
-
+/*
         // Database connection
         Connection databaseConnection = Connector.connectDB();
         if (databaseConnection == null) {
             System.out.println("Failure to Connect to DB. Exiting...");
-            // System.exit(0);
+            System.exit(0);
         }
-
+*/
         // 1.   Registration of Users to a database.
         // User.register("A Person", databaseConnection);
 
@@ -28,13 +28,23 @@ public class Main {
         // User.verifyPassword("SomeonesPassword", hash);
 
         // 3.    Generate MD5 checksum for file.
-        System.out.println(Document.generateChecksum("test.txt"));
+        // System.out.println(Document.generateChecksum("test.txt"));
 
         // 4.   Upload and Download files to dropbox
         Document.uploadFile("test.txt", dropboxConnection);
 
         // 5.   View DropBox folder contents.
         Document.viewFolder("", dropboxConnection);
+
+        // 6.   Download test file from dropbox
+        if (Document.downloadFile(dropboxConnection, "test.txt").equals(false)) {
+            System.out.println("Download Successful!");
+        }
+        else {
+            System.out.println("Failed to download!");
+        }
+
+
 
         // Exit application.
         System.exit(0);
