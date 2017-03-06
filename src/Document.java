@@ -52,21 +52,39 @@ class Document {
         return null;
     }
 
-    /** Downloads a file from dropbox
+    /**
+     * Downloads a file from DropBox
      *
-     * @param client    Dropbox connection instance
-     * @param fileName  Filename we want to download.
-     * @return  true if file is downloaded.
+     * @param client   DropBox connection instance
+     * @param fileName Filename we want to download.
+     * @return true if file is downloaded.
      */
     static Boolean downloadFile(DbxClientV2 client, String fileName) {
         OutputStream outputStream = null;
         try {
             outputStream = new FileOutputStream(fileName);
             FileMetadata metadata = client.files().downloadBuilder("/" + fileName).download(outputStream);
+        } catch (DbxException | IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Deletes a file from DropBox
+     *
+     * @param client   DropBox connection instance
+     * @param fileName Filename we want to delete.
+     * @return true if file is deleted.
+     */
+    static Boolean deleteFile(DbxClientV2 client, String fileName) {
+        OutputStream outputStream = null;
+        try {
+            Metadata metadata = client.files().delete("/" + fileName);
         } catch (DbxException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+            return false;
         }
         return true;
     }
@@ -81,9 +99,9 @@ class Document {
 
         try (InputStream in = new FileInputStream(filename)) {
 
-            // We can manipulate the path for the file to be saved in using this. Stringbuilder to Filepath will do.
+            // We can manipulate the path for the file to be saved in using this. StringBuilder to Filepath will do.
             FileMetadata metadata = client.files().uploadBuilder("/test.txt").uploadAndFinish(in);
-            System.out.println("Sucessfully uploaded " + filename);
+            System.out.println("Successfully uploaded " + filename);
 
         } catch (IOException | DbxException e) {
             e.printStackTrace();

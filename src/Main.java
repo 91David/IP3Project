@@ -30,18 +30,25 @@ public class Main {
         // 3.    Generate MD5 checksum for file.
         // System.out.println(Document.generateChecksum("test.txt"));
 
-        // 4.   Upload and Download files to dropbox
+        // 4.   Upload and Download files to DropBox
         Document.uploadFile("test.txt", dropboxConnection);
 
         // 5.   View DropBox folder contents.
         Document.viewFolder("", dropboxConnection);
 
-        // 6.   Download test file from dropbox
-        if (Document.downloadFile(dropboxConnection, "test.txt").equals(false)) {
+        // 6.   Download test file from DropBox
+        if (Document.downloadFile(dropboxConnection, "test.txt").equals(true)) {
             System.out.println("Download Successful!");
         }
         else {
             System.out.println("Failed to download!");
+        }
+
+        if (Document.deleteFile(dropboxConnection, "test.txt").equals(true)) {
+            System.out.println("Successfully deleted file!");
+        }
+        else {
+            System.out.println("Failed to delete!");
         }
 
 
