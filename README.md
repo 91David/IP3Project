@@ -2,6 +2,7 @@
 Document Management solution allows users to control their documented business processes and policies required documentation.
 
 ## Built With
+* [Apache Spark 2.1.0](https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10)
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [MySQL Server](https://dev.mysql.com/downloads/mysql/)
