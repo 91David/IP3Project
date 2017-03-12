@@ -1,0 +1,58 @@
+.wrapper {
+    overflow-x: hidden;
+    min-height: 400px;
+    position: relative;
+    left: 0;
+}
+
+.toggle {
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #1A2426;
+    padding: 15px 20px;
+}
+
+.side-nav {
+    border-right: 1px solid #34495e;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: -271px;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+}
+
+.side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-nav ul a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.side-nav ul a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-open {
+    left: 269px;
+}
+
+.nav-open .side-nav {
+    left: 0;
+}
+
+.wrapper,
+.side-nav {
+    transition: left .2s ease;
+}

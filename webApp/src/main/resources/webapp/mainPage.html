@@ -18,72 +18,57 @@
             });
         });
     </script>
+    <script src="Javascript/sideNav.js"></script>
+    <link rel="stylesheet" href="SCSS/partials/sideNav.css">
 </head>
 
 <body>
     <div>
-        <nav>
-            <div class="userprofile">
-                <div class="usernameimage">
-                    <h3><img src="images/logo.jpg" class="username"></h3></div>
-                <div class="username">
-                    <h3>Ideagen IP3</h3></div>
-            </div>
-            <div class="taskbox">
-                <div class="taskbar"><a class="texttask">TASKS</a></div>
-                <div class="taskbar">
-                    <div class="tasks1"><a class="textpad1">5</a>
-                        <br/><a class="textpad">Overdue</a></div>
-                    <div class="tasks2"><a class="textpad1">0</a>
-                        <br/><a class="textpad">This Week</a></div>
-                    <div class="tasks3"><a class="textpad1">7</a>
-                        <br/><a class="textpad">Outstanding</a></div>
+
+        
+        <div class="wrapper">
+        <header>
+            <i href="#" class="fa fa-bars toggle"></i>
+
+            <nav class="side-nav">
+                <div class="userprofile">
+                    <div class="usernameimage">
+                        <h3><img src="./images/logo.jpg" class="username"></h3></div>
+                    <div class="username">
+                        <h3>Ideagen IP3</h3></div>
                 </div>
-            </div>
-            <div class="tools">
-                <ul>
-                    <li>
-                        <a href="index.html"><img src="images/Home.svg">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" id="myBtn"><i class="fa fa-2x fa-plus"></i> Add Document</a>
-                    </li>
-                    <!--
-                    <li>
-                        <a href="#"><img src="images/Business.svg">Business Intelligence</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/Audits.svg">Audits</a>
-                    </li>
--->
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="images/Documents.svg">Documents</a>
-                        <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
-                    </li>
-                    <!--
-                    <li>
-                        <a href="#"><img src="images/Reporting.svg">Reporting</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/Risk.svg">Risk</a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="images/Admin.svg">Administration</a>
-                    </li>
--->
-                    <li>
-                        <a href="https://www.ideagen.com/contact-us/"><img src="images/Contact.svg">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <header> <img class="icon" src="images/logo-ideagen-oneCol.png" width="130px" height="30px">
-            <div class="icons"> <img src="images/Documents.svg" alt="" class="icon"> </div>
-            <div class="icons">
-                <input class="search" type="text" name="search" placeholder="Search">
-                <button class="btn primary small">Search</button>
-            </div>
-        </header>
+                <div class="taskbox">
+                    <div class="taskbar"><a class="texttask">TASKS</a></div>
+                    <div class="taskbar">
+                        <div class="tasks1"><a class="textpad1">5</a>
+                            <br/><a class="textpad">Overdue</a></div>
+                        <div class="tasks2"><a class="textpad1">0</a>
+                            <br/><a class="textpad">This Week</a></div>
+                        <div class="tasks3"><a class="textpad1">7</a>
+                            <br/><a class="textpad">Outstanding</a></div>
+                    </div>
+                </div>
+                <div class="tools">
+                    <ul>
+                        <li>
+                            <a href="index.html"><img src="./images/Home.svg">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" id="myBtn"><i class="fa fa-2x fa-plus"></i> Add Document</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="./images/Documents.svg">Documents</a>
+                            <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
+                        </li>
+                        <li>
+                            <a href="https://www.ideagen.com/contact-us/"><img src="./images/Contact.svg">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>        
+        
+
         <section>
             <div class="toolbar"> </div>
         </section>
@@ -176,6 +161,7 @@
             </table>
         </section>
     </div>
+    </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -185,12 +171,21 @@
             </div>
             <div class="modal-body">
                 <form action="#">
-                    <input type="text" class="input" placeholder="Document Title">
+                    <input type="text" class="input" placeholder="Document Title" autofocus>
                     <input type="text" class="input" placeholder="Author Name">
                     <input type="text" class="input" placeholder="Revision Number">
-                    <input type="text" class="input" placeholder="Creation Date">
+                    <input type="date" class="input">
+                    <select name="distributees" id="distributees">
+                        <option value="one">Member_1</option>
+                        <option value="two">Member_2</option>
+                        <option value="three">Member_3</option>
+                        <option value="four">Member_4</option>
+                        <option value="five">Member_5</option>
+                    </select>
+                    <!--                    SELECT ONE: url for file server, upload for local storage-->
+                    <input type="url" class="input" placeholder="File URL">
                     <input type="file" id="file" class="inputfile">
-                    
+
                     <input type="button" class="btn large primary" value="Add Document">
                 </form>
             </div>
