@@ -473,6 +473,10 @@ body {
     margin: 0;
 }
 
+.right {
+    float: right;
+}
+
 
 /* line 19, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 
@@ -611,4 +615,10 @@ select {
 .onClick:hover {
     background-color: white;
     border: none;
+}
+
+.fa {
+    color: #43525B;
+    padding-left: 15px;
+    padding-right: 20px;
 }

@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="SCSS/stylesheet.css">
+    <link rel="stylesheet" href="SCSS/partials/modal.css">
     <link rel="javascript" href="Javascript/javascript.js">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2f9bccd1c4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="Javascript/dropdown.js"></script>
     <script>
@@ -44,18 +46,21 @@
                         <a href="index.html"><img src="images/Home.svg">Home</a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/Dashboard.svg">Dashboard</a>
+                        <a href="#" id="myBtn"><i class="fa fa-2x fa-plus"></i> Add Document</a>
                     </li>
+                    <!--
                     <li>
                         <a href="#"><img src="images/Business.svg">Business Intelligence</a>
                     </li>
                     <li>
                         <a href="#"><img src="images/Audits.svg">Audits</a>
                     </li>
+-->
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="images/Documents.svg">Documents</a>
                         <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
                     </li>
+                    <!--
                     <li>
                         <a href="#"><img src="images/Reporting.svg">Reporting</a>
                     </li>
@@ -65,6 +70,7 @@
                     <li>
                         <a href="#"><img src="images/Admin.svg">Administration</a>
                     </li>
+-->
                     <li>
                         <a href="https://www.ideagen.com/contact-us/"><img src="images/Contact.svg">Contact</a>
                     </li>
@@ -170,6 +176,29 @@
             </table>
         </section>
     </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add New Document</h2>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <input type="text" class="input" placeholder="Document Title">
+                    <input type="text" class="input" placeholder="Author Name">
+                    <input type="text" class="input" placeholder="Revision Number">
+                    <input type="text" class="input" placeholder="Creation Date">
+                    <input type="file" id="file" class="inputfile">
+                    
+                    <input type="button" class="btn large primary" value="Add Document">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Javascript/modal.js"></script>
+    <script src="Javascript/upload.js"></script>
 </body>
 
 </html>
