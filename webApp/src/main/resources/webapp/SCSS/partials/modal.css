@@ -18,7 +18,7 @@
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 80%;
+    width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
@@ -69,13 +69,13 @@
 .close {
     color: white;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #f22929;
     text-decoration: none;
     cursor: pointer;
 }
@@ -97,15 +97,23 @@
 }
 
 .inputfile {
-    margin-top: 30px;
+    margin-top: 20px;
 	cursor: pointer;
     width: 50%;
-    padding-left: 14px;
-    padding-right: 14px;
-    font-size: 14px;
+    padding: 0 14px;
     border: none;
-    font-size: 1rem;
-    vertical-align: bottom;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
+    transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
+    font-size: 1em;
+}
+
+.inputfile:focus {
+    outline: none;
+    border-bottom: 2px solid #18aee0;
 }
 
 .input {
@@ -117,10 +125,9 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     background: transparent;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    opacity: 1;
     animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
     transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
 }
@@ -132,9 +139,20 @@
 
 select {
     width: 100%;
-    padding: 16px 20px;
+    margin: 0 0 25px 0;
+    position: relative;
+    padding: 10px 5px;
     border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-    font-family: 'Open Sans';
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    font-weight: 500;
+    animation: select_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
+    transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
+    font-size: 1em;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 2px solid #18aee0;
 }
