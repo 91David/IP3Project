@@ -8,12 +8,14 @@
 .toggle {
     color: white;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1em;
     position: relative;
     top: 0px;
     left: 0px;
     background-color: #1A2426;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    z-index: 1;
+    float: left;
 }
 
 .side-nav {
@@ -21,10 +23,9 @@
     color: #fff;
     position: fixed;
     top: 0;
-    left: -271px;
-    width: 250px;
+    left: -306px;
+    width: 285px;
     height: 100%;
-    padding: 10px;
 }
 
 .side-nav ul {
@@ -45,7 +46,7 @@
 }
 
 .nav-open {
-    left: 269px;
+    left: 243px;
 }
 
 .nav-open .side-nav {
