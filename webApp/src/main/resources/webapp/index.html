@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="SCSS/stylesheet.css">
     <link rel="stylesheet" href="SCSS/partials/login.css">
+    <link rel="stylesheet" href="SCSS/partials/testing.css">
 </head>
 
 <body>
@@ -15,9 +16,16 @@
             <h2>Ideagen</h2>
             <h4>Login to access documents</h4>
         </header>
-        <form class="login-form" action="#">
-            <input type="text" class="login-input" placeholder="Username" required autofocus/>
-            <input type="password" class="login-input" placeholder="Password" required/>
+        <form class="login-form" action="#"> 
+            <label>
+                <input type="text" autofocus>
+                <div class="label-text">Username</div>
+            </label>
+            
+            <label>
+                <input type="password">
+                <div class="label-text">Password</div>
+            </label>
             <div class="submit-container">
                 <div class="sub-container">
                     <button class="btn medium secondary">Forgot Password?</button>

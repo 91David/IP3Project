@@ -549,10 +549,16 @@ header .brand {
 
 /* Table Content */
 
-table {
+#mainTable {
     background-color: #F3F3F3;
     border-collapse: collapse;
     width: 100%;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.2s cubic-bezier(.55, 0, .1, 1);
+}
+
+.noShadow {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0) !important;
 }
 
 th {

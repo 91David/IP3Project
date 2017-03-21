@@ -20,6 +20,7 @@
 
 .side-nav {
     border-right: 1px solid #34495e;
+    box-shadow: 6px 0 20px 0 rgba(0, 0, 0, 0.5);
     color: #fff;
     position: fixed;
     top: 0;
@@ -55,5 +56,5 @@
 
 .wrapper,
 .side-nav {
-    transition: left .2s ease;
+    transition: left 0.2s cubic-bezier(.55, 0, .1, 1);
 }

@@ -96,47 +96,6 @@
     color: white;
 }
 
-.inputfile {
-    margin-top: 20px;
-	cursor: pointer;
-    width: 50%;
-    padding: 0 14px;
-    border: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', 'sans-serif';
-    font-weight: 500;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
-    transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
-    font-size: 1em;
-}
-
-.inputfile:focus {
-    outline: none;
-    border-bottom: 2px solid #18aee0;
-}
-
-.input {
-    position: relative;
-    width: 100%;
-    padding: 10px 5px;
-    margin: 0 0 25px 0;
-    border: none;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    background: transparent;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    animation: input_opacity 0.8s cubic-bezier(.55, 0, .1, 1);
-    transition: border-bottom 0.2s cubic-bezier(.55, 0, .1, 1);
-}
-
-.input:focus {
-    outline: none;
-    border-bottom: 2px solid #18aee0;
-}
-
 select {
     width: 100%;
     margin: 0 0 25px 0;

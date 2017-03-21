@@ -20,6 +20,7 @@
     </script>
     <script src="Javascript/sideNav.js"></script>
     <link rel="stylesheet" href="SCSS/partials/sideNav.css">
+    <link rel="stylesheet" href="SCSS/partials/testing.css">
 </head>
 
 <body>
@@ -73,7 +74,7 @@
             <div class="toolbar"> </div>
         </section>
         <section>
-            <table>
+            <table id="mainTable">
                 <thead>
                     <tr>
                         <th>DOCUMENT NUMBER</th>
@@ -171,21 +172,22 @@
             </div>
             <div class="modal-body">
                 <form action="#">
-                    <input type="text" class="input" placeholder="Document Title" autofocus>
-                    <input type="text" class="input" placeholder="Author Name">
-                    <input type="text" class="input" placeholder="Revision Number">
-                    <input type="text" class="input" onfocus="(type='date')" placeholder="Creation Date">
-                    
-                    <select name="distributees" id="distributees">
-                        <option value="one">Member_1</option>
-                        <option value="two">Member_2</option>
-                        <option value="three">Member_3</option>
-                        <option value="four">Member_4</option>
-                        <option value="five">Member_5</option>
-                    </select>
-                    
-                    <input type="url" class="input" placeholder="Dropbox URL">
-                    <input type="file" id="file" class="inputfile">
+                   <label>
+                       <input type="text">
+                       <div class="label-text">Document Title:</div>
+                   </label>
+                    <label>
+                        <input type="text">
+                        <div class="label-text">Document Author:</div>
+                    </label>
+                    <label>
+                        <input type="text">
+                        <div class="label-text">Revision Number:</div>
+                    </label>
+                    <label>
+                        <input type="text">
+                        <div class="label-text">Dropbox URL:</div>
+                    </label>
 
                     <input type="button" class="btn large primary" value="Add Document">
                 </form>
