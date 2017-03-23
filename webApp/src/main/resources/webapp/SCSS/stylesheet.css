@@ -326,12 +326,6 @@ img.username {
     font-size: small;
 }
 
-.textpad1 a {
-    vertical-align: middle;
-    font-size: medium;
-    color: white;
-}
-
 .texttask {
     padding-left: 15px;
 }
@@ -370,167 +364,12 @@ div.usernameimage {
     color: white;
 }
 
-
-/* line 3, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.toolbar {
-    padding-bottom: 20px;
-}
-
-
-/* line 5, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.toolbar .search {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-}
-
-
-/* line 13, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.toolbar input:focus {
-    width: 30%;
-}
-
-
-/* line 19, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.document {
-    font-family: 'Open Sans', sans-serif;
-    padding: 10px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-section ul li {
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-/* line 26, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.document .docTitle {
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 5px;
-    width: 200px;
-    padding-left: 30px;
-}
-
-.document .docAuthor {
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 5px;
-    width: 100px;
-    padding-left: 30px;
-}
-
-.document .docCreation {
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 5px;
-    width: 200px;
-    padding-left: 30px;
-}
-
-.document .docVersion {
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 5px;
-    padding-left: 30px;
-}
-
-
-/* line 31, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.document .down {
-    float: right;
-    margin-right: 30px;
-    visibility: hidden;
-}
-
-
-/* line 39, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.document:hover {
-    background-color: #e7eaec;
-    border-left: 5px solid #8BB6E3;
-}
-
-
-/* line 41, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/partials/_document.scss */
-
-.document:hover .down {
-    visibility: visible;
-}
-
-
 /* line 13, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
 
 body {
     padding: 0;
     margin: 0;
 }
-
-.right {
-    float: right;
-}
-
-
-/* line 19, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-.title {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* line 23, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-.paragraph {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* line 29, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-/*
-header {
-    background: #f3f4f5;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    float: left;
-    width: 75%;
-}
-*/
-
-
-/* line 33, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-header .icons {
-    float: right;
-}
-
-header .icon {
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-
-/* line 35, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-header .icons .icon {
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-
-/* line 39, C:/Users/wbrett200/Desktop/IP3Project-master/webApp/SCSS/stylesheet.scss */
-
-header .brand {
-    padding-left: 30px;
-}
-
 
 /* Dropdown Content (Hidden by Default) */
 
@@ -566,14 +405,14 @@ th {
     border: 1px solid #E7EAEC;
     height: 40px;
     color: #222E32;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 
 tr {
     height: 60px;
     font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
     border: 1px solid #E7EAEC;
 }
@@ -634,6 +473,8 @@ select {
 .sub-container {
     width: 50%;
     text-align: center;
+}
 
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
 }

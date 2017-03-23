@@ -1,167 +1,177 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <title>Home</title>
+    
     <link rel="stylesheet" href="SCSS/stylesheet.css">
     <link rel="stylesheet" href="SCSS/partials/modal.css">
-    <link rel="javascript" href="Javascript/javascript.js">
+    <link rel="stylesheet" href="SCSS/partials/sideNav.css">
+    <link rel="stylesheet" href="SCSS/partials/testing.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <scrpit src="Javascript/javascript.js"></scrpit>
     <script src="https://use.fontawesome.com/2f9bccd1c4.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="Javascript/dropdown.js"></script>
     <script>
-        $(document).ready(function () {
-            $("tr.dropClick").click(function () {
+        $(document).ready(function() {
+            $("tr.dropClick").click(function() {
                 $("tr.onClick").toggle();
             });
         });
+
     </script>
     <script src="Javascript/sideNav.js"></script>
-    <link rel="stylesheet" href="SCSS/partials/sideNav.css">
-    <link rel="stylesheet" href="SCSS/partials/testing.css">
 </head>
 
 <body>
     <div>
 
-        
+
         <div class="wrapper">
-        <header>
-            <i href="#" class="fa fa-bars toggle"></i>
+            <header>
+                <i class="fa fa-bars toggle"></i>
 
-            <nav class="side-nav">
-                <div class="userprofile">
-                    <div class="usernameimage">
-                        <h3><img src="./images/logo.jpg" class="username"></h3></div>
-                    <div class="username">
-                        <h3>Ideagen IP3</h3></div>
-                </div>
-                <div class="taskbox">
-                    <div class="taskbar"><a class="texttask">TASKS</a></div>
-                    <div class="taskbar">
-                        <div class="tasks1"><a class="textpad1">5</a>
-                            <br/><a class="textpad">Overdue</a></div>
-                        <div class="tasks2"><a class="textpad1">0</a>
-                            <br/><a class="textpad">This Week</a></div>
-                        <div class="tasks3"><a class="textpad1">7</a>
-                            <br/><a class="textpad">Outstanding</a></div>
+                <nav class="side-nav">
+                    <div class="userprofile">
+                        <div class="usernameimage">
+                            <h3><img src="./images/logo.jpg" class="username"></h3>
+                        </div>
+                        <div class="username">
+                            <h3>Ideagen IP3</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="tools">
-                    <ul>
-                        <li>
-                            <a href="index.html"><img src="./images/Home.svg">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" id="myBtn"><i class="fa fa-2x fa-plus"></i> Add Document</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="./images/Documents.svg">Documents</a>
-                            <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
-                        </li>
-                        <li>
-                            <a href="https://www.ideagen.com/contact-us/"><img src="./images/Contact.svg">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>        
-        
+                    <div class="taskbox">
+                        <div class="taskbar"><a class="texttask">TASKS</a></div>
+                        <div class="taskbar">
+                            <div class="tasks1"><a class="textpad1">5</a>
+                                <br/><a class="textpad">Overdue</a></div>
+                            <div class="tasks2"><a class="textpad1">0</a>
+                                <br/><a class="textpad">This Week</a></div>
+                            <div class="tasks3"><a class="textpad1">7</a>
+                                <br/><a class="textpad">Outstanding</a></div>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <ul>
+                            <li>
+                                <a href="index.html"><img src="./images/Home.svg">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" id="myBtn"><i class="fa fa-2x fa-plus"></i> Add Document</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()"><img src="./images/Documents.svg">Documents</a>
+                                <div id="myDropdown" class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a> </div>
+                            </li>
+                            <li>
+                                <a href="https://www.ideagen.com/contact-us/"><img src="./images/Contact.svg">Contact</a>
+                            </li>
+                            <li>
+                                <a href="admin.html"><i class="fa fa-2x fa-home"></i>Admin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
 
-        <section>
-            <div class="toolbar"> </div>
-        </section>
-        <section>
-            <table id="mainTable">
-                <thead>
-                    <tr>
-                        <th>DOCUMENT NUMBER</th>
-                        <th>DOCUMENT TITLE</th>
-                        <th>OWNER</th>
-                        <th>ACTIVE DATE</th>
-                        <th>REVISION</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="dropClick">
-                        <td>DOC1</td>
-                        <td>IP3.doc</td>
-                        <td>GCU Team 10</td>
-                        <td>02/02/2017 14:05:32</td>
-                        <td>2.0</td>
-                        <tr class="onClick">
-                            <td class="submenu" colspan="5">
-                                <div class="select">
-                                    <select>
+
+            <section>
+                <div class="toolbar"> </div>
+            </section>
+            <section>
+               <h1>Document List</h1>
+                <table id="mainTable">
+                    <thead>
+                        <tr>
+                            <th>DOCUMENT NUMBER</th>
+                            <th>DOCUMENT TITLE</th>
+                            <th>OWNER</th>
+                            <th>ACTIVE DATE</th>
+                            <th>REVISION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dropClick">
+                            <td>DOC1</td>
+                            <td>IP3.doc</td>
+                            <td>GCU Team 10</td>
+                            <td>02/02/2017 14:05:32</td>
+                            <td>2.0</td>
+                            <tr class="onClick">
+                                <td class="submenu" colspan="5">
+                                    <div class="select">
+                                        <select>
                                         <option value="Actions">Action</option>
                                         <option value="Completed">Completed</option>
                                         <option value="Progress">In Progress</option>
                                         <option value="Overdue">Overdue</option>
                                     </select>
-                                </div>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>DETAILS</th>
-                                            <th>NUMBER</th>
-                                            <th>TARGET DATE</th>
-                                            <th>RESPONSE</th>
-                                            <th>COMPLETION DATE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Confirm Impact</td>
-                                            <td>1</td>
-                                            <td>14/04/2017 14:05:32</td>
-                                            <td>In Progress</td>
-                                            <td>27/03/2017 10:27:55</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Confirm Impact</td>
-                                            <td>2</td>
-                                            <td>14/04/2017 14:05:32</td>
-                                            <td>Outstanding</td>
-                                            <td>27/03/2017 10:27:55</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Confirm Impact</td>
-                                            <td>3</td>
-                                            <td>14/04/2017 14:05:32</td>
-                                            <td>Done</td>
-                                            <td>27/03/2017 10:27:55</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>DOC1</td>
-                            <td>IP3.doc</td>
-                            <td>GCU Team 10</td>
-                            <td>02/02/2017 14:05:32</td>
-                            <td>2.0</td>
-                        </tr>
-                        <tr>
-                            <td>DOC1</td>
-                            <td>IP3.doc</td>
-                            <td>GCU Team 10</td>
-                            <td>02/02/2017 14:05:32</td>
-                            <td>2.0</td>
-                        </tr>
-                        <tr>
-                            <td>DOC1</td>
-                            <td>IP3.doc</td>
-                            <td>GCU Team 10</td>
-                            <td>02/02/2017 14:05:32</td>
-                            <td>2.0</td>
-                        </tr>
-                </tbody>
-            </table>
-        </section>
-    </div>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>DETAILS</th>
+                                                <th>NUMBER</th>
+                                                <th>TARGET DATE</th>
+                                                <th>RESPONSE</th>
+                                                <th>COMPLETION DATE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Confirm Impact</td>
+                                                <td>1</td>
+                                                <td>14/04/2017 14:05:32</td>
+                                                <td>In Progress</td>
+                                                <td>27/03/2017 10:27:55</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Confirm Impact</td>
+                                                <td>2</td>
+                                                <td>14/04/2017 14:05:32</td>
+                                                <td>Outstanding</td>
+                                                <td>27/03/2017 10:27:55</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Confirm Impact</td>
+                                                <td>3</td>
+                                                <td>14/04/2017 14:05:32</td>
+                                                <td>Done</td>
+                                                <td>27/03/2017 10:27:55</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>DOC1</td>
+                                <td>IP3.doc</td>
+                                <td>GCU Team 10</td>
+                                <td>02/02/2017 14:05:32</td>
+                                <td>2.0</td>
+                            </tr>
+                            <tr>
+                                <td>DOC1</td>
+                                <td>IP3.doc</td>
+                                <td>GCU Team 10</td>
+                                <td>02/02/2017 14:05:32</td>
+                                <td>2.0</td>
+                            </tr>
+                            <tr>
+                                <td>DOC1</td>
+                                <td>IP3.doc</td>
+                                <td>GCU Team 10</td>
+                                <td>02/02/2017 14:05:32</td>
+                                <td>2.0</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
     </div>
 
     <div id="myModal" class="modal">
@@ -172,7 +182,7 @@
             </div>
             <div class="modal-body">
                 <form action="#">
-                   <label>
+                    <label>
                        <input type="text">
                        <div class="label-text">Document Title:</div>
                    </label>
@@ -194,23 +204,8 @@
             </div>
         </div>
     </div>
-    
-    <div id="dummy" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-               <h2>Confirm</h2>
-                <span class="close">&times;</span>
-            </div>
-            <div class="modal-body">
-                <p>Are you sure?</p>
-                <button class="btn medium primary">Yes</button>
-                <button class="btn medium secondary">Cancel</button>
-            </div>
-        </div>
-    </div>
 
     <script src="Javascript/modal.js"></script>
-    <script src="Javascript/upload.js"></script>
 </body>
 
 </html>
